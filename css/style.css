@@ -1,0 +1,921 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+body {
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.container {
+	max-width: 75% !important;
+}
+
+/* navbar start */
+
+.navbar {
+	position: -webkit-fixed !important; /* For Safari */
+	position: fixed !important;
+	width: 100vw;
+	height: 80px;
+	background-color: white;
+	border-bottom: 1px solid rgb(206, 195, 195);
+	z-index: 99999;
+}
+.nav_menu {
+	background-color: transparent;
+}
+.nav_active {
+	color: #735f5f !important;
+}
+.nav_search {
+	background-color: rgb(5, 47, 137);
+	border: 1px solid rgba(132, 140, 132, 0.4);
+	height: 40px;
+}
+
+.nav_search input {
+	margin-left: -14px;
+	border: none;
+}
+
+.nav_login {
+	height: 40px;
+	/* background-color: red; */
+	margin-right: 5%;
+	margin-bottom: 10px;
+}
+
+.nav_login a {
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	margin: 10px 25px;
+}
+.nav_login button {
+	background-color: #18860a;
+	color: white;
+	border: none;
+}
+.navcollapse {
+	background-color: white;
+}
+
+/* nav bar end */
+/* semi nav start */
+.semi_nav {
+	margin-top: 80px;
+	position: fixed;
+	height: 60px;
+	background-color: white;
+	z-index: 99999;
+}
+.seminav_menu {
+	height: 60px;
+	margin-left: 100px;
+	border: none;
+}
+.seminav_menu .nav-item {
+	font-weight: 400;
+}
+.seminav_drop {
+	width: 180px;
+	margin: -15px 800px !important;
+}
+
+/* semi nav end */
+
+/* hero section start */
+.hero_main {
+	padding-top: 150px;
+}
+.hero_mid {
+	width: 75%;
+	overflow: hidden;
+}
+
+.header_cardtitle {
+	font-size: 80px;
+	width: 70%;
+	text-align: start;
+	color: rgb(24, 165, 24) !important;
+	margin-bottom: 20px !important;
+	overflow: hidden;
+}
+
+.header_cardtxt {
+	width: 85%;
+	font-size: 25px;
+	text-align: start;
+	margin-bottom: 20px !important;
+	color: #646763;
+}
+.hero_img img {
+	max-width: 50rem !important;
+	height: auto;
+}
+.header_btn {
+	background-color: #18860a !important;
+	padding: 10px 20px !important;
+	border: 0px !important;
+	color: white;
+	font-weight: 600 !important;
+}
+
+.logo_images {
+	margin-right: 20px;
+	height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+	.hero_main {
+		padding-top: 70px;
+	}
+	.header_cardtitle {
+		margin-top: 20px;
+		font-size: 40px !important;
+		width: 100% !important;
+	}
+	.header_cardtxt {
+		width: 100% !important;
+	}
+	.logo_images {
+		height: 20px;
+	}
+	.header_right {
+		display: none;
+	}
+}
+
+/* hero section end */
+/* instant start */
+
+.instant_mid {
+	width: 75%;
+	height: 350px;
+	margin: auto !important;
+}
+@media only screen and (max-width: 600px) {
+	.instant_mid {
+		width: 100vw !important;
+		background-image: url('../images/inst_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: -12px !important;
+		overflow: hidden;
+	}
+	.instant_bgimg {
+		display: none;
+	}
+}
+/* your work start */
+
+.urwork_mid {
+	width: 75%;
+	margin: auto !important;
+}
+.gif_img {
+	height: 350px;
+	width: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.urwork_flex {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0px;
+	gap: 10px;
+}
+.urwork_flex1 {
+	margin-top: 0px !important;
+}
+.urwork_cardtitle {
+	margin-top: -10px !important;
+	font-size: 35px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: 600;
+}
+
+.urwork_btn1 {
+	background-color: #18860a !important;
+	padding: 10px 20px !important;
+	border: 0px !important;
+	color: white;
+	font-weight: 600 !important;
+}
+
+.urwork_btn2 {
+	border: 1px solid green !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.urwork_mid {
+		width: 100%;
+		overflow: hidden;
+	}
+	.gif_img {
+		height: 400px;
+		width: 100% !important;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+	}
+	.urwork_btn1 {
+		display: none !important;
+	}
+	.urwork_btn2 {
+		width: 100%;
+	}
+}
+/* urwork end */
+/* 
+telent category start */
+
+.talent_mid {
+	width: 75%;
+	margin: auto !important;
+}
+.talent_mid .card {
+	margin: 0px !important;
+	margin-right: 30px !important;
+	margin-bottom: 30px !important;
+	border-radius: 20px;
+	padding: 15px 20px;
+	width: 22%;
+	background-color: rgba(235, 255, 234, 0.5);
+	border: none;
+}
+.talent_mid h1 {
+	font-size: 40px;
+	font-weight: 600;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	word-spacing: 5px !important;
+}
+.talent_title a {
+	text-decoration: underline;
+	color: #18860a;
+	font-size: 18px;
+}
+.star-icon {
+	color: rgb(24, 165, 24) !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.talent_mid {
+		text-align: center;
+		width: 100vw !important;
+		margin-left: -12px !important;
+	}
+	h1 {
+		font-size: 20px !important;
+	}
+	.talent_title {
+		text-align: center;
+	}
+
+	.talent_mid .card {
+		width: 100vw !important;
+	}
+}
+
+/* herosection end */
+
+/* enterprise section start */
+.enterprise_main {
+	margin-bottom: 50px;
+}
+.enterprise_mid {
+	width: 75%;
+	margin: auto !important;
+	border-radius: 10px;
+}
+.enterprise_left {
+	background-color: #13544e !important;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 0px !important;
+}
+
+.enterprise_left .left-1 h3 {
+	color: white;
+	margin: 30px 20px;
+}
+.enterprise_left .left-1 h1 {
+	color: white;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	font-size: 60px;
+	font-weight: 700;
+}
+.enterprise_left .left-1 h1 span {
+	margin: 0px;
+	color: #91e6b3;
+	overflow: hidden;
+}
+.enterprise_left .left-1 p {
+	color: white;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	font-size: 20px;
+	width: 90%;
+}
+
+.enterprise_left .left-2 ul li {
+	width: 80%;
+	margin-left: -10px !important;
+	color: white;
+	font-size: 20px;
+}
+
+.enterprise_left .left-2 img {
+	margin-right: 10px;
+	height: 20px;
+}
+
+.enterprise_left .left-3 button {
+	margin-bottom: 20px;
+	margin-left: 20px;
+	color: #13544e;
+	padding: 7px 20px;
+	border-radius: 10px;
+	border: none;
+}
+.enterprise_rightimg {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-image: url('	https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/f_auto,q_auto/brontes/for-enterprise/enterprise-2023.jpg') !important;
+	background-size: cover !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.enterprise_main {
+		overflow: hidden;
+	}
+	.enterprise_mid {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-left: -12px !important;
+		width: 100vw !important;
+	}
+	.enterprise_left {
+		border-radius: 0px;
+		width: 100vw !important;
+		margin-left: 0px !important;
+	}
+	.enterprise_left .left-1 h3 {
+		margin: 15px 10px;
+	}
+
+	.enterprise_left .left-1 h1 {
+		margin-bottom: 10px;
+		margin-left: 5px;
+		font-size: 38px !important;
+	}
+	.enterprise_left .left-1 h1 pre {
+		width: 100vw;
+		font-weight: 600;
+		font-family: sans-serif;
+	}
+
+	.enterprise_left .left-1 p {
+		margin-bottom: 5px;
+		margin-left: 10px;
+		font-size: 16px;
+	}
+	.enterprise_left .left-2 ul li {
+		margin-left: -20px !important;
+		font-size: 12px;
+		width: 100vw;
+	}
+	.enterprise_left .left-2 img {
+		margin-right: 10px;
+		height: 15px;
+	}
+
+	.enterprise_left .left-3 button {
+		margin-left: 10px;
+	}
+	.enterprise_rightimg {
+		border-radius: 0px !important;
+		height: 200px;
+		margin-bottom: -20px;
+		background-image: url('https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/f_auto,q_auto,w_1050,dpr_auto/brontes/for-enterprise/enterprise-2023-md.jpg') !important;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+	}
+}
+/* enterprise section end */
+
+/* for client start */
+
+.client_mid {
+	width: 75%;
+	margin: auto;
+	background-color: #13544e;
+	background-image: url('https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale/brontes/delivery-models/find-talent-2x.jpg');
+	background-size: cover;
+	border-radius: 10px;
+}
+.client_h1 {
+	font-size: 80px;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+.client_row2 p {
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	width: 40%;
+}
+
+.client_btn {
+	background-color: green;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.client_mid {
+		background-image: url('https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale/brontes/delivery-models/find-talent-mobile-2x.jpg') !important;
+		background-size: cover;
+		width: 100vw !important;
+		margin-left: -12px;
+		border-radius: 0px;
+		overflow: hidden;
+	}
+	.client_row2 p {
+		width: 90% !important;
+	}
+}
+
+/* client end */
+
+/* business start */
+
+.business_mid {
+	width: 75%;
+	margin: auto !important;
+	position: relative;
+	overflow: hidden !important;
+}
+
+.bus_left {
+	background-color: #f2f7f2;
+	border-radius: 10px;
+	padding-top: 50px !important;
+	padding: 30px;
+	width: 98%;
+}
+.bus_left1 h1 {
+	font-size: 70px;
+	font-family: serif;
+	font-weight: 600;
+}
+
+.bus_left1 h2 {
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.bus_left1 p {
+	font-size: 20px;
+	width: 90%;
+}
+.busleft_icon {
+	font-size: 25px;
+}
+.busright_parent {
+	background-color: #21b00f;
+	border-radius: 10px;
+}
+
+.busright_txt {
+	color: white;
+	padding-top: 300px;
+	/* background-color: orange; */
+}
+.busright_txt1 h1 {
+	line-height: 35px;
+}
+.busmob_img {
+	display: none;
+}
+.business_mid img {
+	position: absolute;
+	height: 80%;
+	width: 30%;
+	transform: translate(720px, 60px) rotate(-8deg);
+}
+
+@media only screen and (max-width: 600px) {
+	.business_mid {
+		width: 100vw;
+		overflow: hidden;
+	}
+
+	.bus_left {
+		border-radius: 0px;
+		padding: 25px;
+		padding-top: 5px !important;
+		width: 100%;
+	}
+	.bus_left1 h1 {
+		font-size: 50px !important;
+		font-family: serif;
+		font-weight: 600;
+	}
+
+	.bus_left1 h2 {
+		font-size: 30px;
+	}
+	.bus_left1 p {
+		font-size: 20px;
+	}
+	.busleft_icon {
+		font-size: 15px;
+	}
+	.busright_parent {
+		border-radius: 0px;
+	}
+	/* .bus_right {
+		background-color: pink;
+	} */
+
+	.busright_txt h1 {
+		font-size: 28px !important;
+		font-weight: 600;
+	}
+	.busright_txt p {
+		font-size: 13px !important;
+		width: 70%;
+	}
+	.busright_txt {
+		color: white;
+		padding: 0px !important;
+		margin-left: -20px !important;
+		width: 65%;
+	}
+	.business_mid .bus_img {
+		display: none;
+	}
+	.busmob_img {
+		display: block;
+		height: 300px !important;
+		width: 170px !important;
+		transform: translate(170px, 20px) !important;
+	}
+}
+
+/* business end */
+
+/* find start */
+.find_mid {
+	width: 75%;
+	height: 630px;
+	margin: auto !important;
+}
+
+.find_leftimg {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	height: 630px;
+	background-image: url('https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload//q_auto,dpr_2.0,f_auto/brontes/for-talents/find-great-work@2x.jpg') !important;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.find_right {
+	background-color: #1f57c3;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.find_content {
+	padding-top: 30px;
+	padding-left: 20px;
+	color: white;
+	height: 100%;
+}
+
+.find_txt1 h1 {
+	line-height: 60px;
+	font-size: 70px;
+	font-family: serif;
+	font-weight: 600;
+}
+.find_txt1 p {
+	font-size: 20px;
+	width: 70%;
+}
+.find_txt2 {
+	margin-top: 60px !important;
+	border-top: 1px solid white;
+	font-size: 20px;
+	width: 100% !important;
+}
+.find_txt2a {
+	font-weight: 500;
+	padding-top: 10px;
+	width: 33% !important;
+}
+.find_btn {
+	color: blue !important;
+	font-weight: 700;
+	margin-top: 30px;
+	padding: 5px 20px !important;
+	border-radius: 10px !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.find_mid {
+		margin-left: -12px !important;
+		width: 100vw !important;
+		height: 1150px !important;
+		overflow: hidden;
+	}
+	.find_txt1 h1 {
+		line-height: 40px;
+		font-size: 50px !important;
+		overflow: hidden;
+	}
+	.find_txt1 p {
+		font-size: 15px;
+		width: 90%;
+	}
+	.find_txt2a {
+		width: 50% !important;
+	}
+
+	.find_btn {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	.find_leftimg {
+		border-radius: 0px;
+		height: 400px;
+		background-image: url('https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload//q_auto,dpr_2.0,f_auto/brontes/for-talents/find-great-work@2x.jpg') !important;
+		background-size: cover !important;
+		margin-bottom: -50px;
+	}
+	.find_right {
+		border-radius: 0px;
+	}
+}
+/* find end */
+
+/* trusted start */
+
+.trust_mid {
+	width: 75%;
+
+	margin: auto;
+}
+.trust_row1 h1 {
+	padding-top: 20px;
+	font-size: 80px !important;
+	font-family: serif;
+	font-weight: 600;
+}
+
+.trustmob_sliderimg {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.trust_mid {
+		width: 100vw;
+		overflow: hidden;
+	}
+	.trust_row1 h1 {
+		padding-left: 30px !important;
+		font-size: 45px !important;
+	}
+	.trust_row1 {
+		font-size: 45px !important;
+	}
+	.trust_sliderimg {
+		display: none;
+	}
+	.trustmob_sliderimg {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+/* find end */
+
+/* support start */
+.support_main {
+	margin: 100px 0px 100px 0px;
+}
+.support_mid {
+	/* background-color: red; */
+	width: 75%;
+	margin: auto;
+	position: relative;
+}
+.support_row1 {
+	background-color: #f4fafa;
+	border-radius: 20px;
+	padding: 30px 0px 30px 30px !important;
+}
+.support_row1 h1 {
+	font-family: serif;
+	font-weight: 600;
+}
+
+.support_row1 p {
+	font-size: 20px;
+	color: #646763;
+}
+
+.support_row1 .btn {
+	margin-top: 20px;
+	font-size: 20px;
+	outline: 2px solid green;
+	padding: 5px 20px;
+}
+.ukrainhelp_img img {
+	height: 150px;
+	position: absolute;
+	right: 80px;
+	top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+	.support_main {
+		margin: 50px 0px 50px 0px;
+	}
+	.support_mid {
+		width: 100vw;
+		overflow: hidden;
+	}
+	.ukrainhelp_img img {
+		height: 100px;
+		position: absolute;
+		right: 30px;
+		top: 180px;
+	}
+	.support_row1 h1 {
+		font-size: 30px !important;
+	}
+	.support_row1 p {
+		font-size: 18px;
+		width: 80%;
+	}
+	.support_row1 {
+		border-radius: 0px;
+	}
+}
+
+/* support end */
+.top_main {
+	margin: 50px 0px;
+}
+.top_mid {
+	/* background-color: red; */
+	width: 75%;
+	margin: auto;
+}
+
+.top_row1 h1 {
+	color: rgb(208, 218, 208);
+}
+.top_row1 span {
+	color: rgb(10, 169, 10);
+}
+.top_row1 small {
+	font-size: 20px;
+}
+
+.top_row1 ul li {
+	display: block;
+}
+.top_row1 ul li a {
+	text-decoration: none;
+	color: rgb(149, 140, 140);
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+	.top_main {
+		margin: 50px 0px 50px 0px;
+	}
+	.top_mid {
+		width: 100vw;
+		overflow: hidden;
+	}
+	.top_headline ul li {
+		display: inline;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.top_row1 ul li a {
+		font-size: 15px;
+	}
+}
+/* top end */
+
+/* footer start */
+.footer_main {
+	margin: 50px 0px;
+	overflow: hidden;
+}
+.footer_mid {
+	background-color: #181818;
+	border-radius: 20px;
+	width: 75%;
+	margin: auto;
+}
+.footer_row1 {
+	padding: 80px 50px !important;
+}
+.list_title {
+	margin-bottom: 25px !important;
+}
+.footer_row1 ul li {
+	display: block;
+	margin-bottom: 15px;
+}
+.footer_row1 ul li a {
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+.footer_row2 {
+	padding: 0px 80px 20px !important;
+}
+.footer_row2 h3 {
+	font-size: 18px;
+	color: white;
+	margin-right: 20px;
+}
+
+.footer_icon {
+	margin-top: -7px;
+	background-color: transparent;
+	height: 40px;
+	width: 40px;
+	color: white;
+	border-radius: 50%;
+	text-align: center;
+	padding: 3px 2px;
+	border: 1px solid white;
+	font-size: 20px;
+}
+.footer_right {
+	justify-content: end;
+}
+.footer_row3 {
+	padding: 10px 40px !important;
+	margin: auto;
+}
+.footer_end {
+	width: 95% !important;
+	padding-top: 20px;
+	margin: auto;
+	border-top: 1px solid white;
+}
+.footer_end ul {
+	padding-left: 0px;
+}
+.footer_end ul li span {
+	margin-right: 60px !important;
+}
+.footer_end ul li a {
+	color: white;
+	text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+	.footer_mid {
+		width: 95%;
+		overflow: hidden;
+		border-radius: 0px;
+	}
+	.footer_row1 {
+		display: none !important;
+	}
+	.footer_row2 .footer_left {
+		margin-top: 20px;
+		margin-left: -30px;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.footer_row2 .footer_right {
+		margin-top: 20px;
+		justify-content: start !important;
+		margin-left: -30px;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.footer_end ul li {
+		display: block;
+	}
+}

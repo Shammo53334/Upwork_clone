@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Upwork</title>
+	</head>
+
+	<body>
+		<!-- nav bar starting -->
+		<!-- <div class="container-fluide  nav-main">
+        <div class=" d-flex justify-content-center  nav-mid ">
+             <div class="col-lg-1  nav-1">
+                <img src="images/nav-logo.png" alt="">
+            </div>
+            <div class="col-lg-5  nav-2">
+                <ul>
+                    <li><a href="">Find Talent</a><i class="fa-solid fa-angle-down nav-icon"></i></li>
+                    <li><a href="">Find Work</a><i class="fa-solid fa-angle-down nav-icon"></i></li>
+                    <li><a href="">Why Upwork</a><i class="fa-solid fa-angle-down nav-icon"></i></li>
+                    <li><a href="">Enterprise</a><i class="fa-solid fa-angle-down nav-icon"></i></li>      
+                </ul>
+            </div>
+            <div class="col-lg-4  nav-3">
+                <div class="search-category">
+                
+                    <div class="search">
+                        <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input type="search" name="search" id="search" placeholder="search"/>
+                     </div>
+                    <div  class="category">
+                        <select name="category" id="category">
+                            <option value="Talent">Talent</option>
+                            <option value="Project">Projects</option>
+                            <option value="Jobs">Jobs</option>       
+                        </select>
+                    </div>
+              
+                
+                </div>
+            </div>
+            <div class="col-lg-2  nav-4">
+                <div class="button">
+                    <button>Post a job</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class=" nav-mid-2">
+        <ul>
+            <li><a href="">Development & IT</a></li>
+            <li><a href="">AI Services </a></li>
+            <li><a href="">Design & Creative</a></li>
+            <li><a href="">Sales & Marketing</a></li>
+            <li><a href="">Admin & Customer Support</a></li>
+             <li><a href="">More</a></li>
+        </ul>
+        </div>
+    </div> -->
+
+		<!-- nav bar end -->
+
+		<!-- ------------------------------------------------------------------------------------------- 
+   nav bar start -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid nav_menu mx-5 fw-bold">
+				<a class="navbar-brand ms-5" href="#"><img src="images/nav-logo.png" alt="" /></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse navcollapse text-end" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Find Talent
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Find Work
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Why Upwork
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav_active nav-link active" aria-current="page" href="#">Enterprise</a>
+						</li>
+					</ul>
+					<form class="d-flex bg-light rounded rounded-5 me-2 nav_search" role="search">
+						<button class="btn rounded rounded-5 mx-0" type="submit">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+						<input class="form-control me-2 rounded rounded-5" type="search" placeholder="Search" aria-label="Search" />
+						<ul class="mx-1 rounded rounded-5 py-1">
+							<li class="nav-item dropdown category-dropdown">
+								<a
+									class="nav-link dropdown-toggle fw-normal"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Talent
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</li>
+						</ul>
+					</form>
+					<div class="nav_login">
+						<a href="">Log in</a>
+						<button class="py-2 px-4 rounded rounded-3">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- nav end -->
+
+		<!-- semi nav start -->
+		<div class="container-fluid d-none d-lg-block semi_nav">
+			<div class="navbar navbar-expand-lg seminav_menu">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Developent & IT </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">AI Servies</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Design & Creative</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sales & marketing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Admin & Customer Support</a>
+					</li>
+
+					<li class="nav-item">
+						<a
+							class="btn dropdown-toggle"
+							href="#"
+							role="button"
+							id="dropdownMenuLink"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							More
+						</a>
+
+						<ul class="dropdown-menu seminav_drop" aria-labelledby="dropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- semi nav end -->
+
+		<div class="total">
+			<!-- hero section start -->
+
+			<div class="container-fluid text-center hero_main mx-0 d-block">
+				<div class="row m-auto hero_mid">
+					<div class="col-12 col-md-6 text-start header_left">
+						<div class="card-body">
+							<h5 class="card-title header_cardtitle">How work should work</h5>
+							<p class="card-text header_cardtxt">
+								Forget the old rules. You can have the best people.Right now. Right here
+							</p>
+							<button type="button" class="btn btn-primary rounded rounded-4 header_btn">Get Started</button>
+						</div>
+						<div>
+							<h1 class="fs-5 text-secondary mt-5">Trusted by</h1>
+							<!-- logo images -->
+							<div class="header_left_imgs">
+								<img class="logo_images" src="images/microsoft.svg" alt="microsoft" />
+								<img class="logo_images" src="images/airbnb.svg" alt="airbnb" />
+								<img class="logo_images" src="images/bissell.svg" alt="bissell" />
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 text-start header_right">
+						<div class="hero_img"><img src="images/header-img.webp" alt="" height="350px" width="80%" /></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- hero section end -->
+			<!-- instant start -->
+			<div class="container-fluid instant_main">
+				<div class="row instant_mid">
+					<div class="col-12">
+						<div class="instant_bgimg">
+							<img src="images/instant.png" alt="" height="350px" width="100%" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Your work start -->
+			<div class="container-fluid mt-5 text-center urwork_main d-block">
+				<div class="row urwork_mid">
+					<div class="col-12 col-md-5 text-start urwork_left">
+						<div class="gif_img">
+							<img src="images/gif_img.png" height="100%" width="100%" />
+						</div>
+					</div>
+					<div class="col-12 col-md-7 text-start urwork_right">
+						<div class="d-flex flex-column gap-3 urwork_flex">
+							<div class="urwork_flex1">
+								<h1 class="card-title urwork_cardtitle">Up your work game, it’s easy</h1>
+							</div>
+							<div class="d-flex urwork_flex1">
+								<div class="p-3 urwork_icon">
+									<i class="fa-solid fa-pencil"></i>
+								</div>
+								<div class="urwork_txt">
+									<h5>No cost to join</h5>
+									<p class="card-text urwork_cardtxt">
+										Register and browse professionals, explore projects, or even book a consultation.
+									</p>
+								</div>
+							</div>
+
+							<div class="d-flex urwork_flex1">
+								<div class="p-3 urwork_icon">
+									<i class="fa-solid fa-pencil"></i>
+								</div>
+								<div class="urwork_txt">
+									<h5>No cost to join</h5>
+									<p class="card-text urwork_cardtxt">
+										Register and browse professionals, explore projects, or even book a consultation.
+									</p>
+								</div>
+							</div>
+							<div class="d-flex urwork_flex1">
+								<div class="p-3 urwork_icon">
+									<i class="fa-solid fa-pencil"></i>
+								</div>
+								<div class="urwork_txt">
+									<h5>No cost to join</h5>
+									<p class="card-text urwork_cardtxt">
+										Register and browse professionals, explore projects, or even book a consultation.
+									</p>
+								</div>
+							</div>
+							<div class="urwork_flex1">
+								<button type="button" class="mt-2 me-2 btn btn-primary rounded rounded-4 urwork_btn1">
+									Sign up for free
+								</button>
+								<button type="button" class="mt-2 btn rounded rounded-4 urwork_btn2">Learn How to hire</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- your work end -->
+			<!-- talent category start -->
+
+			<div class="container-fluid talent_main">
+				<div class="row talent_mid">
+					<div class="mt-5 mb-2 talent_title">
+						<h1>Browse talent by category</h1>
+						<p>Looking for work? <a href="">Browse jobs </a></p>
+					</div>
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-2 card mb-3">
+						<div class="card-body">
+							<h5 class="card-title">Development & IT</h5>
+							<p class="card-text">
+								<span class="mt-2 me-4"
+									><i class="fa fa-star star-icon" aria-hidden="true"></i>
+									4.8/5
+								</span>
+								<span> 1854 skills </span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- talent section end -->
+
+			<!-- Enterprise section start -->
+			<div class="container-fluid enterprise_main">
+				<div class="row enterprise_mid">
+					<div class="col-12 col-md-6 enterprise_left">
+						<div class="d-flex flex-column left_content">
+							<div class="left-1">
+								<h3>Enterprise Suite</h3>
+								<h1>
+									This is how <br />
+									<span>good companies <br />find good company.</span>
+								</h1>
+								<p>
+									Access the top 1% of talent on Upwork, and a full suite of hybrid workforce management tools. This is
+									how innovation works now.
+								</p>
+							</div>
+							<div class="left-2">
+								<ul>
+									<li><img src="images/Skills.webp" alt="" />Access expert talent to fill your skill gaps</li>
+									<li><img src="images/Skills.webp" alt="" />Access expert talent to fill your skill gaps</li>
+									<li><img src="images/Skills.webp" alt="" />Access expert talent to fill your skill gaps</li>
+								</ul>
+							</div>
+							<div class="left-3">
+								<button>Learn more</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 enterprise_rightimg"></div>
+				</div>
+			</div>
+			<!-- enterprise section end -->
+
+			<!-- for client start -->
+			<div class="container-fluid mb-5 client_main">
+				<div class="px-5 client_mid">
+					<div class="row pt-4 mb-5">
+						<div class="col-12">
+							<h5 class="text-light fw-normal">For Clients</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 client_row2">
+							<h1 class="client_h1">
+								Find talent <br />
+								your way
+							</h1>
+							<p>
+								Work with the largest network of independent professionals and get things done—from quick turnarounds to
+								big transformations.
+							</p>
+						</div>
+					</div>
+					<div class="row client_row3">
+						<div class="col-12 col-sm-4">
+							<div class="pt-2 ps-3 pb-2 my-4 test client_btn">
+								<h1 class="text-light">
+									Post a job <br />
+									and hire a pro
+								</h1>
+								<p class="text-light">
+									Talent Marketplace <sup>TM</sup
+									><i class="fa fa-arrow-right client_arrowicon ms-1" aria-hidden="true"></i>
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4">
+							<div class="pt-2 ps-3 pb-2 my-4 test client_btn">
+								<h1 class="text-light">
+									Post a job <br />
+									and hire a pro
+								</h1>
+								<p class="text-light">
+									Talent Marketplace <sup>TM</sup
+									><i class="fa fa-arrow-right client_arrowicon ms-1" aria-hidden="true"></i>
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4">
+							<div class="pt-2 ps-3 pb-2 my-4 test client_btn">
+								<h1 class="text-light">
+									Post a job <br />
+									and hire a pro
+								</h1>
+								<p class="text-light">
+									Talent Marketplace <sup>TM</sup
+									><i class="fa fa-arrow-right client_arrowicon ms-1" aria-hidden="true"></i>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- client end -->
+			<!-- businesss start -->
+			<div class="container_fluide mb-5 business_main">
+				<div class="row business_mid">
+					<div class="col-12 col-md-8">
+						<div class="d-flex flex-column gap-4 bus_left">
+							<div class="bus_left1">
+								<h1>Why businesses <br />turn to Upwork</h1>
+							</div>
+
+							<div class="d-flex bus_left1">
+								<div class="p-3 pt-2 busleft_icon">
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<div class="busleft_txt">
+									<h2>Proof of quality</h2>
+									<p class="card-text busleft_cardtxt">
+										Check any pro’s work samples, client reviews, and identity verification.
+									</p>
+								</div>
+							</div>
+							<div class="d-flex bus_left1">
+								<div class="p-3 pt-2 busleft_icon">
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<div class="busleft_txt">
+									<h2>Proof of quality</h2>
+									<p class="card-text busleft_cardtxt">
+										Check any pro’s work samples, client reviews, and identity verification.
+									</p>
+								</div>
+							</div>
+							<div class="d-flex mb-5 bus_left1">
+								<div class="p-3 pt-2 busleft_icon">
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<div class="busleft_txt">
+									<h2>Proof of quality</h2>
+									<p class="card-text busleft_cardtxt">
+										Check any pro’s work samples, client reviews, and identity verification.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 busright_parent">
+						<div class="d-flex ps-5 pt-5 bus_right">
+							<div class="d-flex flex-column gap-4 busright_txt">
+								<div class="busright_txt1">
+									<h1>
+										We're <br />
+										the world's work <br />
+										marketplace
+									</h1>
+								</div>
+								<div class="d-flex txt_1">
+									<div class="p-3 pt-0 fs-2 busright_icon">
+										<i class="fa-solid fa-star"></i>
+									</div>
+									<div>
+										<h2 class="fs-1">4.9/5</h2>
+										<p class="card-text fs-5 busright_txts">Clients Rate Proffessional on Upwork</p>
+									</div>
+								</div>
+								<div class="d-flex mb-5 txt_1">
+									<div class="p-3 pt-0 fs-2 busright_icon">
+										<i class="fa-solid fa-star"></i>
+									</div>
+									<div>
+										<h2 class="fs-1">4.9/5</h2>
+										<p class="card-text fs-5 busright_txts">Clients Rate Proffessional on Upwork</p>
+									</div>
+								</div>
+								<img class="busmob_img" src="images/person-with-headset.webp" />
+							</div>
+						</div>
+					</div>
+					<img class="bus_img" src="images/person-with-headset.webp" alt="person_headset" />
+				</div>
+			</div>
+			<!-- business end -->
+			<!-- find section start -->
+			<div class="container-fluid mb-5 find_main">
+				<div class="row find_mid">
+					<div class="col-12 col-md-6 find_leftimg"></div>
+					<div class="col-12 col-md-6 find_right">
+						<div class="d-flex flex-column find_content">
+							<div class="d-flex flex-column gap-3 mb-5 find_txt1">
+								<div class="find_txt1a">
+									<h3 class="fw-normal">For talent</h3>
+								</div>
+								<div class="find_txt1a">
+									<h1>
+										Find great <br />
+										work
+									</h1>
+								</div>
+								<div class="find_txt1a">
+									<p>Meet clients you’re excited to work with and take your career or business to new heights.</p>
+								</div>
+							</div>
+							<div class="row find_txt2">
+								<div class="col-6 col-md-4 find_txt2a">
+									<p>Find opportunities for every stage of your freelance career</p>
+								</div>
+								<div class="col-6 col-md-4 find_txt2a">
+									<p>Control when, where, and how you work</p>
+								</div>
+								<div class="col-6 col-md-4 pe-5 find_txt2a">
+									<p>Explore different ways to earn</p>
+								</div>
+							</div>
+							<div class="d-flex find_txt3">
+								<div class="find_txt3a">
+									<button class="btn btn-light find_btn">Find opportunities</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 
+         find end -->
+
+			<!-- trusted start -->
+
+			<div class="container-fluide trust_main">
+				<div class="trust_mid">
+					<div class="col-12 row trust_row1">
+						<h1>
+							Trusted by leading <br />
+							brands and startups
+						</h1>
+					</div>
+					<div class="row mt-5 trust_row2">
+						<div class="col-12 trust_slider">
+							<img class="trust_sliderimg" src="images/slider.png" alt="" />
+							<img class="trustmob_sliderimg" src="images/slider_mob.jpg" alt="" />
+						</div>
+					</div>
+					<div class="row trust_row2"></div>
+				</div>
+			</div>
+
+			<!-- find end -->
+
+			<!-- support start -->
+			<div class="support_main">
+				<div class="support_mid">
+					<div class="row support_row">
+						<div class="col-12 support_row1">
+							<h1>We support Ukraine</h1>
+							<p>
+								We are taking action to help our freelancers, our clients, and the people of Ukraine—and so can you.
+							</p>
+							<button class="btn rounded rounded-3">Learn more</button>
+							<div class="ukrainhelp_img">
+								<img src="images/ukraine-help.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- support end -->
+			<div class="top_main">
+				<div class="top_mid">
+					<div class="row top_row">
+						<div class="row top_row1">
+							<div class="col-12 col-md-4 top_headline">
+								<h1>
+									<ul>
+										<span><li>Top skills</li></span>
+										<li>Trending skills</li>
+										<li>Top skills in US</li>
+										<li>Project Catalog<small>TM</small></li>
+									</ul>
+								</h1>
+							</div>
+							<div class="col-6 col-md-4">
+								<ul>
+									<li><a href="#">Generative AI Specialists</a></li>
+									<li><a href="#">Data Entry Specialists</a></li>
+									<li><a href="#">Video Editorss</a></li>
+									<li><a href="#">Data Analyst</a></li>
+									<li><a href="#">Shopify Developer</a></li>
+									<li><a href="#">Ruby on Rails Developer</a></li>
+									<li><a href="#">Android Developer</a></li>
+									<li><a href="#">Bookkeeper</a></li>
+									<li><a href="#">Content Writer</a></li>
+									<li><a href="#">Copywriter</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-4">
+								<ul>
+									<li><a href="#">Generative AI Specialists</a></li>
+									<li><a href="#">Data Entry Specialists</a></li>
+									<li><a href="#">Video Editorss</a></li>
+									<li><a href="#">Data Analyst</a></li>
+									<li><a href="#">Shopify Developer</a></li>
+									<li><a href="#">Ruby on Rails Developer</a></li>
+									<li><a href="#">Android Developer</a></li>
+									<li><a href="#">Bookkeeper</a></li>
+									<li><a href="#">Content Writer</a></li>
+									<li><a href="#">Copywriter</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- top end -->
+			<!-- footer start -->
+			<div class="footer_main">
+				<div class="footer_mid">
+					<div class="row footer_row">
+						<div class="row footer_row1">
+							<div class="col-12 col-md-3">
+								<ul>
+									<li class="list_title"><a href="#">For Clients</a></li>
+									<li><a href="#">How to hire</a></li>
+									<li><a href="#">Talent Marketplace</a></li>
+									<li><a href="#">Project Catalog</a></li>
+									<li><a href="#">Hire an agency</a></li>
+									<li><a href="#">Enterprise</a></li>
+									<li><a href="#">Any Hire</a></li>
+									<li><a href="#">Contract-to-hire</a></li>
+									<li><a href="#">Direct Contracts</a></li>
+									<li><a href="#">Hire in the USA</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-3">
+								<ul>
+									<li class="list_title"><a href="#">For Clients</a></li>
+									<li><a href="#">How to hire</a></li>
+									<li><a href="#">Talent Marketplace</a></li>
+									<li><a href="#">Project Catalog</a></li>
+									<li><a href="#">Hire an agency</a></li>
+									<li><a href="#">Enterprise</a></li>
+									<li><a href="#">Any Hire</a></li>
+									<li><a href="#">Contract-to-hire</a></li>
+									<li><a href="#">Direct Contracts</a></li>
+									<li><a href="#">Hire in the USA</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-3">
+								<ul>
+									<li class="list_title"><a href="#">For Clients</a></li>
+									<li><a href="#">How to hire</a></li>
+									<li><a href="#">Talent Marketplace</a></li>
+									<li><a href="#">Project Catalog</a></li>
+									<li><a href="#">Hire an agency</a></li>
+									<li><a href="#">Enterprise</a></li>
+									<li><a href="#">Any Hire</a></li>
+									<li><a href="#">Contract-to-hire</a></li>
+									<li><a href="#">Direct Contracts</a></li>
+									<li><a href="#">Hire in the USA</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-3">
+								<ul>
+									<li class="list_title"><a href="#">For Clients</a></li>
+									<li><a href="#">How to hire</a></li>
+									<li><a href="#">Talent Marketplace</a></li>
+									<li><a href="#">Project Catalog</a></li>
+									<li><a href="#">Hire an agency</a></li>
+									<li><a href="#">Enterprise</a></li>
+									<li><a href="#">Any Hire</a></li>
+									<li><a href="#">Contract-to-hire</a></li>
+									<li><a href="#">Direct Contracts</a></li>
+									<li><a href="#">Hire in the USA</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row footer_row2">
+							<div class="col-12 col-md-6">
+								<div class="d-flex footer_left">
+									<div><h3>Follow Us</h3></div>
+									<div class="d-flex gap-2 footer_icons">
+										<div class="footer_icon">
+											<i class="fa-brands fa-facebook"></i>
+										</div>
+										<div class="footer_icon">
+											<i class="fa-brands fa-instagram"></i>
+										</div>
+										<div class="footer_icon">
+											<i class="fa-brands fa-linkedin"></i>
+										</div>
+										<div class="footer_icon">
+											<i class="fa-brands fa-youtube"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="d-flex footer_right">
+									<div><h3>Mobile app</h3></div>
+									<div class="d-flex gap-2 footer_icons">
+										<div class="footer_icon">
+											<i class="fa-brands fa-apple"></i>
+										</div>
+										<div class="footer_icon">
+											<i class="fa-brands fa-android"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer_row3">
+							<div class="col-md-12 footer_end">
+								<ul>
+									<li>
+										<a href="#"><span>© 2015 - 2024 Upwork® Global Inc.</span></a>
+									</li>
+									<li><a href="#">Terms of Service</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">CA Notice at Collection</a></li>
+									<li><a href="#">Cookie Settings</a></li>
+									<li><a href="#">Accessibility</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+			integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</body>
+</html>
